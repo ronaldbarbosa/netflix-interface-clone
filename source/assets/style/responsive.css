@@ -1,7 +1,12 @@
-@media screen and (max-width: 700px){
-    header .container{
+@media screen and (max-width: 800px){
+    header .content-left{
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
+        margin: auto;
+    }
+    header .content-right{
+        display: none;
     }
     .botao{
         margin-top: 10px;

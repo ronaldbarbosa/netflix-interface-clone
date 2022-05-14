@@ -14,13 +14,23 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Documentários</a>
-            </nav>
+            <div class="content-left">
+                <h2 class="logo">NETFLIX</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Mais recentes</a>
+                    <a href="#">Minha Lista</a>
+                </nav>
+            </div>
+            <div class="content-right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-gift"></i>
+                <i class="fa-solid fa-bell"></i>
+                <img src="./assets/images/icon-1.jpg" alt="">
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
         </div>
     </header>
     <main>
@@ -29,14 +39,27 @@
                 <h3 class="titulo">BREAKING BAD</h3>
                 <p class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam blanditiis facere nulla alias possimus, suscipit est repellat sed, expedita sequi quam perspiciatis sit asperiores quae. Possimus cumque recusandae a. Enim?</p>
                 <div class="botoes">
-                    <button role="button" class="botao"><i class="fa-solid fa-play"></i> ASSISTIR AGORA</button>
-                    <button role="button" class="botao"><i class="fa-solid fa-circle-info"></i> MAIS INFORMAÇÕES</button>
+                    <button role="button" class="botao"><i class="fa-solid fa-play"></i> Assistir</button>
+                    <button role="button" class="botao"><i class="fa-solid fa-circle-info"></i> Mais informações</button>
                 </div>
             </div>
         </div>
     </main>
 
     <div class="carrosel-series">
+        <h3 class="titulo-carrosel">Continuar assistindo</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item" onclick=func(11)>
+                <a href="#"><img class="box-filme" src="./assets/images/mini-11.jpg" alt=""></a>
+            </div>
+            <div class="item" onclick=func(12)>
+                <a href="#"><img class="box-filme" src="./assets/images/mini-12.jpg" alt=""></a>
+            </div>
+        </div>
+    </div> 
+
+    <div class="carrosel-series">
+        <h3 class="titulo-carrosel">Populares na Netflix</h3>
         <div class="owl-carousel owl-theme">
             <div class="item"><img class="box-filme" src="./assets/images/mini-1.jpg" alt=""></div>
             <div class="item"><img class="box-filme" src="./assets/images/mini-2.jpg" alt=""></div>
@@ -51,9 +74,22 @@
         </div>
     </div>    
 
+    <div class="container">
+        <div id="player">
+
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SveaGIlBL2I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>    
+    </div>
+    <div class="previous-button">
+        <a href="index.html">
+            <button role="button" class="botao">Voltar</button>
+        </a>
+    </div>
+
     <script src="https://kit.fontawesome.com/1f8514ecc0.js"></script>
     <script src="./assets/js/owl/jquery.min.js"></script>
     <script src="./assets/js/owl/owl.carousel.min.js"></script>
     <script src="./assets/js/setup.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
